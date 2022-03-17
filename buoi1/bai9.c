@@ -9,6 +9,8 @@ void dequy(int n)
 
 int main()
 {
-    dequy(35);
+    int n;
+    scanf("%d", &n);
+    dequy(n);
     return 0;
 }
