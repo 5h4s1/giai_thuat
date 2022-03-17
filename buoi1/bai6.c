@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void dequy(int i, int n){
-    if(n % i == 0 && n % 2 == 1){
+    if(n % i == 0 && i % 2 == 1){
         printf("%d", i);
         return;
     }
@@ -9,9 +9,9 @@ void dequy(int i, int n){
 }
 
 int main(){
-    int n;
+    int n,i;
     scanf("%d", &n);
-    // printf("%d",n);
+   
     dequy(n-1, n);
     return 0;
 }
